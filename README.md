@@ -1,8 +1,9 @@
 # ejerciciosaplicacion
-# Ejercicio 8:
+
+## Ejercicio 8:
 
 algoritmo descomponer
- # Descompone `ca`en `componentes`en `dimensión` cadenas #separadas por `separador`
+ #Descompone `ca`en `componentes`en `dimensión` cadenas #separadas por `separador`
 
 Entrada 
   ca: CADENA # La a descomponer
