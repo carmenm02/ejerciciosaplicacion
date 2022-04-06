@@ -1,5 +1,10 @@
-# ejerciciosaplicacion
+<h1 align="center">	Ejercicios  de aplicacion</h1>
 
+<h2>Repositorio:</h2>
+
+Este es el link del [repositorio](https://github.com/carmenm02/ejerciciosaplicacion.git)
+
+```
 ## Ejercicio 8:
 
 algoritmo descomponer
@@ -152,3 +157,4 @@ post condición
     )
 
 fin índice_palabra
+```
