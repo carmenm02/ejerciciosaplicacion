@@ -1,0 +1,36 @@
+# Ejercicio 9
+
+Algoritmo índice_palabra
+  # La primera palabra de `diccionario`, después de la palabra de índice `ìnicio`, que empieza por ìnicial`.
+
+Entrada
+  inicial : CARACTER
+    # La inicial a buscar
+  diccionario : TABLA(CADENA)
+    # Objetivo de la búsqueda
+  inicio : ENTERO
+    # Índice de la primera celda a observar
+
+Resultado : ENTERO
+
+precondición
+  es_alfabético(inicial)
+  está_definido(diccionario)
+  índice_válido(diccionario, inicio)
+
+post condición
+  #AUSENTE si no hay palabra con la inicial `ìnicial` en sub_tabla (diccionario, inicio, índice_max(diccionario))
+  Resultado = AUSENTE => (∀k ∈ Z)
+    (
+      inicio <= k <= índice_max(diccionario) =>
+      ítem(diccionario[k], 1) ≠ inicial
+    )
+  # Resultado es el indice de una palabra de inicial `ìnicial` en sub_tabla(diccionario, inicio,índice_max(diccionario))
+  Resultado ≠ AUSENTE =>
+    (
+      inicio <= Resultado <= índice_max(diccionario)
+      y
+      ítem(diccionario[Resultado], 1) = inicial
+    )
+
+fin índice_palabra
